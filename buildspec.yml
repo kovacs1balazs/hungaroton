@@ -1,0 +1,9 @@
+version: 1
+frontend:
+  phases:
+    install:
+      commands:
+        - npm ci --only=prod
+    build:
+      commands:
+        - npm run build
