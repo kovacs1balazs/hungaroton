@@ -1,9 +1,19 @@
 version: 1
 frontend:
   phases:
+    preBuild:
+      commands:
+        - echo "Skipping default npm ci to avoid devDependencies conflicts"
     install:
       commands:
         - npm ci --only=prod
     build:
       commands:
         - npm run build
+  artifacts:
+    baseDirectory: .next
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
