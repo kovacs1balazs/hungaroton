@@ -21,9 +21,6 @@
     "react-dom": "19.1.0"
   },
   "devDependencies": {
-    "cypress": "^15.3.0",
-    "@cypress/react18": "^2.0.1",
-    "@cypress/webpack-dev-server": "^5.1.2",
     "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
