@@ -1,5 +1,10 @@
-import ArtistsTable from "@/components/ArtistsTable";
+"use client";
+
+import dynamic from "next/dynamic";
 import { Container, Typography } from "@mui/material";
+
+const ArtistsTable = dynamic(() => import("@/components/ArtistsTable"), { ssr: false });
+
 
 export default function Page() {
   return (
